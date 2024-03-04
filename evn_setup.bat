@@ -1,7 +1,8 @@
 @echo off
 
-@REM 가상 환경 생성.
-python -m venv .venv
+@REM 가상 환경 생성 (생성 전 해당버전 설치 및 path 등록 필수)
+@REM python -m venv .venv
+py -3.12 -m venv .venv
 
 @REM 가상 환경 활성화.
 call .venv\Scripts\activate
