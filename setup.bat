@@ -7,14 +7,14 @@
 @REM 127.0.0.1:8000/redoc
 
 @REM 가상환경 생성.
-@REM python -m venv .venv
+python -m venv .venv
 
 @REM 가상환경 삭제.
 @REM rm .venv
 
 @REM 가상환경 활성화.
-@REM cd .venv/Scripts/
-@REM activate
+cd .venv/Scripts/
+activate
 
 @REM 가상환경 비활성화.
 @REM deactivate
@@ -23,7 +23,7 @@
 @REM pip freeze > requirements.txt
 
 @REM 패키지 설치 (목록파일).
-@REM pip install -r requirements.txt
+pip install -r requirements.txt
 
 @REM 패키지 설치 (수동).
 @REM pip install fastapi
@@ -32,4 +32,6 @@
 @REM 서버 실행.
 @REM uvicorn.exe main:app --reload --host=0.0.0.0 --port=8000
 @REM uvicorn.exe main:app --reload --host=127.0.0.1 --port=8000
-@REM uvicorn main:app --reload
+uvicorn main:app --reload
+
+@REM 실행 : (.venv) D:\Github\APIServer>  ==> uvicorn.exe main:app --reload --host=127.0.0.1 --port=8000 
