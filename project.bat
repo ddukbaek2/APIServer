@@ -7,7 +7,7 @@
 @REM 127.0.0.1:8000/redoc
 
 @REM 가상환경 생성.
-python -m venv .venv
+python3.12.2 -m venv .venv
 
 @REM 가상환경 삭제.
 @REM rm .venv
