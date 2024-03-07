@@ -25,14 +25,14 @@ app.add_middleware(CORSMiddleware,
 #------------------------------------------------------------------------
 @app.get("/")
 async def response_file_by_default():
-	return FileResponse("pages/index.html")
+	return FileResponse("assets/resources/pages/index.html")
 
 #------------------------------------------------------------------------
 # 웹페이지 요청.
 #------------------------------------------------------------------------
 @app.get("/{file_name}")
 async def response_file_by_name(file_name : str = ""):
-	return FileResponse(f"pages/{file_name}")
+	return FileResponse(f"assets/resources/pages/{file_name}")
 
 #------------------------------------------------------------------------
 # 첫 페이지.
